@@ -53,7 +53,7 @@ EOF
 #输出信息
 echo "浏览器访问 http://`hostname -I|awk '{print $1}'`/zabbix"
 ```
-> 若80端口被占用 修改*/etc/httpd/conf/httpd.conf*
+> 若80端口被占用 修改/etc/httpd/conf/httpd.conf<br>
 > 注意SElinux和firewalld关闭状态
 ![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-10-39%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ## 被监控端Win10
