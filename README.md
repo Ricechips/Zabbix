@@ -74,9 +74,9 @@ D:\zabbix\bin\zabbix_agentd.exe -c D:\zabbix\conf\zabbix_agentd.conf -s  //启�
 > 在服务端测试连通性*zabbix_get -s 192.168.106.3 -p 10050 -k "system.cpu.load[all,avg1]*
 ![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-15-02%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ## 被监控端Centos
-> *rpm -ivh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el7.noarch.rpm*
-> *yum install zabbix-agent*
-> *vi /etc/zabbix/zabbix_agentd.conf*修改
+> *rpm -ivh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el7.noarch.rpm*<br>
+> *yum install zabbix-agent*<br>
+> *vi /etc/zabbix/zabbix_agentd.conf*修改<br>
 ```c
 Server=192.168.106.201     //安装zabbix服务端的机器的IP
 ServerActive=192.168.106.201 //安装zabbix服务端的机器的IP
