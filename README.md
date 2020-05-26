@@ -1,8 +1,8 @@
 # Zabbix
 
 ## 环境
->Zabbix server:Centos7 192.168.106.201<br>
->被监控端:Win10 192.168.106.3    Centos 192.168.106.2
+>Zabbix server: `Centos7 192.168.106.201`<br>
+>被监控端:`Win10 192.168.106.3`    `Centos 192.168.106.2`
 
 ## 监控服务端
 >脚本
