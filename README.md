@@ -1,8 +1,8 @@
 # Zabbix
 
 ## 环境
-Zabbix server:Centos7 192.168.106.201<br>
-被监控端:Win10 192.168.106.3  Centos 192.168.106.2
+>Zabbix server:Centos7 192.168.106.201<br>
+>被监控端:Win10 192.168.106.3    Centos 192.168.106.2
 
 ## 监控服务端
 >脚本
@@ -55,7 +55,7 @@ echo "浏览器访问 http://`hostname -I|awk '{print $1}'`/zabbix"
 ```
 > 若80端口被占用 修改*/etc/httpd/conf/httpd.conf*
 > 注意SElinux和firewalld关闭状态
-
+![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-10-39%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ## 被监控端Win10
 > 打通虚拟机和主机的网络:route add 192.168.106.0 mask 255.255.255.0 192.168.106.1
 > 官网[跳转](https://www.zabbix.com/cn/download_agents)下载相应版本Zip<br>
@@ -72,7 +72,7 @@ D:\zabbix\bin\zabbix_agentd.exe -c D:\zabbix\conf\zabbix_agentd.conf -s  //启�
 ```
 > 关闭防火墙
 > 在服务端测试连通性*zabbix_get -s 92.168.106.3 -p 10050 -k "system.cpu.load[all,avg1]*
-
+![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-15-02%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
 ## 被监控端Centos
 > *rpm -ivh http://repo.zabbix.com/zabbix/3.0/rhel/7/x86_64/zabbix-release-3.0-1.el7.noarch.rpm*
 > *yum install zabbix-agent*
@@ -83,3 +83,4 @@ ServerActive=192.168.106.201 //安装zabbix服务端的机器的IP
 Hostname=Centos          //主机名
 ```
 >  开启服务*systemctl start zabbix-agen*
+![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-11-02%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
