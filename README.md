@@ -57,7 +57,9 @@ echo "浏览器访问 http://`hostname -I|awk '{print $1}'`/zabbix"
 > 注意SElinux和firewalld关闭状态<br>
 > *yum install zabbix-agent -y*<br>
 > *systemctl start zabbix-agent*监控服务端
-![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-10-39%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
+![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-10-39%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)<br>
+> zabbix is not running报错是因为selinux没关闭<br>
+> setenforce 0或/etc/selinux/config修改SELINUX="disabled"
 ## 被监控端Win10
 > 打通虚拟机和主机的网络:route add 192.168.106.0 mask 255.255.255.0 192.168.106.1<br>
 > 官网[跳转](https://www.zabbix.com/cn/download_agents)下载相应版本Zip<br>
