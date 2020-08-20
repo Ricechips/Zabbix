@@ -86,5 +86,5 @@ Server=192.168.106.201     //安装zabbix服务端的机器的IP
 ServerActive=192.168.106.201 //安装zabbix服务端的机器的IP
 Hostname=Centos          //主机名
 ```
->  开启服务*systemctl start zabbix-agen*
+>  开启服务*systemctl start zabbix-agent*
 ![avatar](https://github.com/Ricechips/Zabbix/blob/master/PrtScn/2020-05-26%2014-11-02%20%E7%9A%84%E5%B1%8F%E5%B9%95%E6%88%AA%E5%9B%BE.png)
